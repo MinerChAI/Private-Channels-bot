@@ -56,3 +56,7 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Other
+const.py
+private_channels_cfg.json
