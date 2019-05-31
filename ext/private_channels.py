@@ -23,7 +23,7 @@ class PrivateChannels(commands.Cog):
         try:
             with open('private_channels_cfg.json') as f:
                 self.data = json.load(f)
-        except json.JSONDecodeError:
+        except json.JSONDecodeError, FileNotFoundError:
             self.data = {}
         self.data = StrDict(self.data)
         self.check_guilds.start()
