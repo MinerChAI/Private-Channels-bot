@@ -5,4 +5,10 @@ bot = Bot('+')
 bot.load_extension('ext.private_channels')
 bot.load_extension('jishaku')
 
-bot.run(TOKEN)
+
+def run():
+    bot.run(TOKEN)
+
+
+if __name__ == '__main__':
+    run()
